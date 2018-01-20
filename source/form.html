@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--title">
+              <a href="#" class="page-header__logo">pink</a>
+              <button class="main-nav__toggle main-nav__toggle--close" type="button">закрыть меню</button>
+            </li>
+            <li class="site-list__item"><a href="index.html">главная</a></li>
+            <li class="site-list__item"><a href="photo.html">фотографии</a></li>
+            <li class="site-list__item site-list__item--active"><a>конкурс</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="title-image">
+        <p>конкурс на самое безбашенное путешествие с пинк</p>
+        <img src="http://via.placeholder.com/320x236">
+      </section>
+      <section class="form">
+        <h1 class="visually-hidden">форма заполнения для конкурса</h1>
+        <p>поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! пожалуйста, заполните форму ниже:</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__fullname-form">
+            <label for="surname">фамилия:</label>
+            <input type="text" name="fullname" id="surname" placeholder="Укажите фамилию *">
+            <label for="name">имя:</label>
+            <input type="text" name="fullname" id="name" placeholder="введите ваше имя *">
+            <label for="mid-name">отчество:</label>
+            <input type="text" name="fullname" id="mid-name" placeholder="ну и отчество тоже">
+          </div>
+          <div class="form__achievs-block">
+            <h3>ваши безбашенные достижения в путешествии</h3>
+            <input type="checkbox" name="achievs" id="shark" value="shark" checked>
+            <label for="shark">сделал селфи с акулой</label>
+            <input type="checkbox" name="achievs" id="sunburn" value="subburn" checked>
+            <label for="sunburn">обгорел на пляже</label>
+            <input type="checkbox" name="achievs" id="chuck" value="chuck">
+            <label for="chuck">видел чака норриса</label>
+            <input type="checkbox" name="achievs" id="souvenir" value="souvenir">
+            <label for="souvenir">накупил сувениров</label>
+            <input type="checkbox" name="achievs" id="tower" value="tower">
+            <label for="tower">удержал башню</label>
+            <input type="checkbox" name="achievs" id="hotel" value="hotel">
+            <label for="hotel">разгромил отель</label>
+          </div>
+          <div class="form__contacts-block">
+            <label for="phone">номер телефона</label>
+            <input type="tel" name="contacts" id="phone" placeholder="номер,пожалуйста">
+            <label for="email">адрес почты</label>
+            <input type="email" name="contacts" id="email" placeholder="введите почту *">
+          </div>
+          <div class="form__platform-block">
+            <h3>с каким приложением путешествовали?</h3>
+            <input type="radio" name="platform" id="ios" value="ios">
+            <label for="ios">pink для ios</label>
+            <input type="radio" name="platform" id="android" value="android">
+            <label for="android">pink для android</label>
+            <input type="radio" name="platform" id="windows" value="windows">
+            <label for="windows">windows phone</label>
+          </div>
+          <div class="form__review-block">
+            <h3>опишите свои эмоции</h3>
+            <textarea name="reviewblock" id="review" cols="30" rows="10" placeholder="можно прям в красках,не стесняясь в выражениях">
+            </textarea>
+            <button type="submit">отправить форму</button>
+            <p><span>*</span> - обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer-page">
+      <section class="footer-page__logo">
+        <a href="index.html">pink</a>
+      </section>
+      <section class="footer-page__social">
+        <a href="">twitter</a>
+        <a href="">facebook</a>
+        <a href="">youtube</a>
+      </section>
+      <section class="footer-page__cpyright">
+        <p>разработано
+          <a href="">html academy</a>
+        </p>
+      </section>
+    </footer>
+
+
+
+  </body>
+</html>
