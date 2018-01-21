@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -26,13 +27,12 @@
     <main class="page-main">
       <section class="title-image">
         <p>конкурс на самое безбашенное путешествие с пинк</p>
-        <img src="http://via.placeholder.com/320x236">
       </section>
       <section class="form">
         <h1 class="visually-hidden">форма заполнения для конкурса</h1>
         <p>поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! пожалуйста, заполните форму ниже:</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__fullname-form">
+          <div class="form__fullname-block">
             <label for="surname">фамилия:</label>
             <input type="text" name="fullname" id="surname" placeholder="Укажите фамилию *">
             <label for="name">имя:</label>
@@ -41,7 +41,7 @@
             <input type="text" name="fullname" id="mid-name" placeholder="ну и отчество тоже">
           </div>
           <div class="form__achievs-block">
-            <h3>ваши безбашенные достижения в путешествии</h3>
+            <h1>ваши безбашенные достижения в путешествии</h1>
             <input type="checkbox" name="achievs" id="shark" value="shark" checked>
             <label for="shark">сделал селфи с акулой</label>
             <input type="checkbox" name="achievs" id="sunburn" value="subburn" checked>
@@ -62,7 +62,7 @@
             <input type="email" name="contacts" id="email" placeholder="введите почту *">
           </div>
           <div class="form__platform-block">
-            <h3>с каким приложением путешествовали?</h3>
+            <h1>с каким приложением путешествовали?</h1>
             <input type="radio" name="platform" id="ios" value="ios">
             <label for="ios">pink для ios</label>
             <input type="radio" name="platform" id="android" value="android">
@@ -71,7 +71,7 @@
             <label for="windows">windows phone</label>
           </div>
           <div class="form__review-block">
-            <h3>опишите свои эмоции</h3>
+            <h1>опишите свои эмоции</h1>
             <textarea name="reviewblock" id="review" cols="30" rows="10" placeholder="можно прям в красках,не стесняясь в выражениях">
             </textarea>
             <button type="submit">отправить форму</button>
@@ -85,7 +85,7 @@
         <a href="index.html">pink</a>
       </section>
       <section class="footer-page__social">
-        <a href="">twitter</a>
+        <a class="" href="">twitter</a>
         <a href="">facebook</a>
         <a href="">youtube</a>
       </section>
@@ -95,8 +95,15 @@
         </p>
       </section>
     </footer>
-
-
-
+    <div class="popup-success">
+      <h1>ваша заявка отправлена</h1>
+      <p>спасибо за ваше участие, ваша заявка уже поступила к нам. в ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button type="button">закрыть окно</button>
+    </div>
+    <div class="popup-failure">
+      <h1>что-то пошло не так!</h1>
+      <p>проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="button">ок</button>
+    </div>
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -25,16 +26,15 @@
     </header>
     <main class="page-main">
       <section class="title-image">
-        <img src="http://via.placeholder.com/320x463">
       </section>
       <section class="platforms">
         <h1 class="visually-hidden">скачать приложение "pink" для разных платформ</h1>
-        <button class="btn-site platforms__btn-download">скачать приложение</button>
+        <a class="btn-site platforms__btn-download" href="">скачать приложение</a>
         <div class="platforms__wrapper">
           <ul class="platforms__list">
-            <li class="platforms__list-item"><a href="">apple<svg></svg></a></li>
-            <li class="platforms__list-item"><a href="">android<svg></svg></a></li>
-            <li class="platforms__list-item"><a href="">windows<svg></svg></a></li>
+            <li class="platforms__item"><a href="">apple<svg></svg></a></li>
+            <li class="platforms__item"><a href="">android<svg></svg></a></li>
+            <li class="platforms__item"><a href="">windows<svg></svg></a></li>
           </ul>
           <div class="platforms__info">
             <p>доступно для iphone, ipad, android, windows phone, os x, windows 8</p>
@@ -43,35 +43,31 @@
       </section>
       <section class="slogan">
         <h1 class="visually-hidden">наш лозунг</h1>
-        <div class="slogan__wrapper">
           <p>устали от серости мегаполиса?</p>
           <p>нам есть, что вам предложить!</p>
-        </div>
       </section>
       <section class="features">
         <h1 class="visually-hidden">наши преимущества</h1>
         <div class="features__item">
-          <h2>поднимает настроение</h2>
+          <b>поднимает настроение</b>
           <p>приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
         <div class="features__item">
-          <h2>меняет мир вокруг</h2>
+          <b>меняет мир вокруг</b>
           <p>сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
         <div class="features__item">
-          <h2>заводит новых друзей</h2>
+          <b>заводит новых друзей</b>
           <p>ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <div class="features__image-block">
-          <img src="http://via.placeholder.com/157x277">
-        </div>
+        <img src="http://via.placeholder.com/157x277">
       </section>
       <section class="comments">
         <h1 class="visually-hidden">отзывы наших пользователей</h1>
         <div class="comments__wrapper slider-comments">
           <ul class="comments__list slider-comments__list">
             <li class="comments__item slider-comments__item">
-              <h2>николай петров</h2>
+              <b>николай петров</b>
               <p>«это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! а еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
@@ -85,35 +81,35 @@
       <section class="pricelist">
         <h1 class="visually-hidden">наш прайлист</h1>
         <div class="pricelist__wrapper slider-pricelist">
-          <ul class="pricelist-__list slider-pricelist__list">
+          <ul class="pricelist__list slider-pricelist__list">
             <li class="pricelist__item pricelist__item--active slider-pricelist__item">
-              <ul class="item__list">
-                <li class="item__title">
+              <ul class="pricelist__submenu-list">
+                <li class="pricelist__submenu-item-title">
                   <a href="">стандарт 3,99 usd</a>
                 </li>
-                <li class="item__profit item__profit--yes">розовый фильтр</li>
-                <li class="item__profit item__profit--no">смайлики</li>
-                <li class="item__profit item__profit--no">комментарии</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--yes">розовый фильтр</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--no">смайлики</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--no">комментарии</li>
               </ul>
             </li>
             <li class="pricelist__item slider-pricelist__item">
-              <ul class="item__list">
-                <li class="item__title">
+              <ul class="pricelist__submenu-list">
+                <li class="pricelist__submenu-item-title">
                   <a href="">название тарифа стоимость usd</a>
                 </li>
-                <li class="item__profit item__profit--yes">розовый фильтр</li>
-                <li class="item__profit item__profit--no">смайлики</li>
-                <li class="item__profit item__profit--no">комментарии</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--yes">розовый фильтр</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--no">смайлики</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--no">комментарии</li>
               </ul>
             </li>
             <li class="pricelist__item slider-pricelist__item">
-              <ul class="item__list">
-                <li class="item__title">
+              <ul class="pricelist__submenu-list">
+                <li class="pricelist__submenu-item-title">
                   <a href="">название тарифа стоимость usd</a>
                 </li>
-                <li class="item__profit item__profit--yes">розовый фильтр</li>
-                <li class="item__profit item__profit--no">смайлики</li>
-                <li class="item__profit item__profit--no">комментарии</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--yes">розовый фильтр</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--no">смайлики</li>
+                <li class="pricelist__submenu-item-profit pricelist__submenu-item-profit--no">комментарии</li>
               </ul>
             </li>
           </ul>
@@ -140,8 +136,5 @@
         <img src="http://via.placeholder.com/320x167">
       </section>
     </main>
-
-
-
   </body>
 </html>
