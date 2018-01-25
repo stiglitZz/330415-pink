@@ -25,7 +25,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="title-image">
+      <section class="title-image title-image-form">
         <p>конкурс на самое безбашенное путешествие с пинк</p>
       </section>
       <section class="form">
@@ -63,7 +63,7 @@
           </div>
           <div class="form__platform-block">
             <h1>с каким приложением путешествовали?</h1>
-            <input type="radio" name="platform" id="ios" value="ios">
+            <input type="radio" name="platform" id="ios" value="ios" checked="">
             <label for="ios">pink для ios</label>
             <input type="radio" name="platform" id="android" value="android">
             <label for="android">pink для android</label>
@@ -72,10 +72,10 @@
           </div>
           <div class="form__review-block">
             <h1>опишите свои эмоции</h1>
-            <textarea name="reviewblock" id="review" cols="30" rows="10" placeholder="можно прям в красках,не стесняясь в выражениях">
+            <textarea name="reviewblock" id="review" cols="30" rows="10">можно прям в красках,не стесняясь в выражениях
             </textarea>
             <button type="submit">отправить форму</button>
-            <p><span>*</span> - обязательные поля</p>
+            <span>*</span><p> - обязательные поля</p>
           </div>
         </form>
       </section>
@@ -90,17 +90,18 @@
         <a href="">youtube</a>
       </section>
       <section class="footer-page__cpyright">
-        <p>разработано
-          <a href="">html academy</a>
-        </p>
+        <p>разработано</p>
+        <a href="#">html academy</a>
       </section>
     </footer>
-    <div class="popup-success">
+    <div class="popup popup-success">
       <h1>ваша заявка отправлена</h1>
       <p>спасибо за ваше участие, ваша заявка уже поступила к нам. в ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button type="button">закрыть окно</button>
+      <div class="popup__btn-wrapper">
+        <button type="button">закрыть окно</button>
+      </div>
     </div>
-    <div class="popup-failure">
+    <div class="popup popup-failure">
       <h1>что-то пошло не так!</h1>
       <p>проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button type="button">ок</button>
