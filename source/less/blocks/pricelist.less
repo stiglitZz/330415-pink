@@ -1,29 +1,37 @@
 .pricelist {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
+  .font-style();
   background-color: @white-gray;
   color: @dark-gray;
+
+  a {
+    text-decoration: none;
+  }
 }
 
-.pricelist__list, .pricelist__submenu-list {
-  list-style: none;
-}
-.pricelist a {
-  text-decoration: none;
+.pricelist__list,
+.pricelist__submenu-list {
+  .reset-list();
 }
 
-.pricelist__submenu-list a {
-  color: @white;
+.pricelist__submenu-list {
+
+  a {
+    color: @white;
+  }
 }
-.pricelist__submenu-list a span {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 30px;
+
+.pricelist__submenu-list {
+
+  a {
+
+    span {
+    .font-style(24px; 300; 30px);
+    }
+  }
 }
+
 .pricelist__submenu-item-title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+
+  .font-style(18px; 700; 30px);
   background-color: @dark-gray;
 }

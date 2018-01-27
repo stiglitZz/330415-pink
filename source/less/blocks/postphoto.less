@@ -5,20 +5,26 @@
 .postphoto__info-block {
   background-color: @white;
 }
-.postphoto__info-block p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  color: @dark-gray;
+
+.postphoto__info-block {
+
+  p {
+    .font-style();
+    color: @dark-gray;
+  }
 }
-.postphoto__share-block button {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
+
+.postphoto__share-block {
+
+  button {
+    .font-style(18px; 700; 18px)
+  }
 }
+
 .postphoto__btn-share {
   color: @pink;
 }
+
 .postphoto__btn-cancel {
   color: @dark-gray;
 }

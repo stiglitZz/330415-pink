@@ -1,37 +1,88 @@
 .form {
   color: @dark-gray;
+
+  p {
+    .font-style();
+  }
 }
 
-.form p, .form__review-block p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-}
-.form__fullname-block label, .form__review-block h1,
-.form__review-block span {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  color: @pink;
-}
-.form__fullname-block input, .form__contacts-block input,
-.form__achievs-block label, .form__platform-block label,
-.form__review-block textarea {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  color: @dark-gray;
-}
-.form__achievs-block h1, .form__contacts-block label, .form__platform-block h1 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: @pink;
+.form__review-block {
 
+  p {
+    .font-style();
+  }
 }
-.form__review-block button {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  color: @white;
+
+.form__fullname-block {
+
+  label {
+    .font-style();
+    color: @pink;
+  }
+
+  input {
+    .font-style(18px);
+    color: @dark-gray;
+  }
+}
+
+.form__review-block {
+
+  h1 {
+    .font-style();
+    color: @pink;
+  }
+
+  span {
+    .font-style();
+    color: @pink;
+  }
+
+  textarea {
+    .font-style(18px);
+    color: @dark-gray;
+  }
+
+  button {
+    .font-style(18px; 700; 30px);
+    color: @white;
+  }
+}
+
+.form__achievs-block {
+
+  h1 {
+    .font-style(18px; 400; 18px);
+    color: @pink;
+  }
+  label {
+    .font-style(18px);
+    color: @dark-gray;
+  }
+}
+
+.form__contacts-block {
+
+  input {
+    .font-style(18px);
+    color: @dark-gray;
+  }
+
+  label {
+    .font-style(14px; 400; 18px);
+    color: @pink;
+  }
+}
+
+.form__platform-block {
+
+  h1 {
+    .font-style(14px; 400; 18px);
+    color: @pink;
+  }
+
+  label {
+    .font-style(18px);
+    color: @dark-gray;
+  }
 }

@@ -1,20 +1,21 @@
 .platforms {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
+  .font-style(14px; 300; 24px);
   background-color: @dark-blue;
   color: @white;
 }
 
-.platforms a {
-  color: @white;
-  text-decoration: none;
+.platforms {
+
+  a {
+    color: @white;
+    text-decoration: none;
+  }
 }
+
 .platforms__list {
-  list-style: none;
+  .reset-list();
 }
+
 .platforms__btn-download {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
+  .font-style(18px; 700; 18px);
 }
