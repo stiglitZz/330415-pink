@@ -4,24 +4,26 @@
   line-height: 30px;
   background-color: @white-gray;
   color: @dark-gray;
-  &__list, &__submenu-list {
-    list-style: none;
-  }
-  & a {
-    text-decoration: none;
-  }
-  &__submenu-item-title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    background-color: @dark-gray;
-    & a {
-      color: @white;
-    }
-    & a span {
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 30px;
-    }
-  }
+}
+
+.pricelist__list, .pricelist__submenu-list {
+  list-style: none;
+}
+.pricelist a {
+  text-decoration: none;
+}
+
+.pricelist__submenu-list a {
+  color: @white;
+}
+.pricelist__submenu-list a span {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.pricelist__submenu-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: @dark-gray;
 }
