@@ -1,7 +1,12 @@
 .platforms {
   .font-style(14px; 300; 24px);
-  background-color: @dark-blue;
   color: @white;
+  order: 2;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 258px 286px;
+  background-attachment: scroll;
+  padding-top: 294px;
 
   a {
     color: @white;
@@ -9,6 +14,14 @@
   }
 }
 
+.platforms__inner {
+  background-color: @dark-blue;
+  padding-top: 28px;
+}
+
+.platforms__wrapper {
+  width: 280px;
+}
 .platforms__list {
   .reset-list();
 }

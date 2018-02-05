@@ -1,4 +1,5 @@
 .main-nav {
+  display: flex;
   .font-style(18px; 700; 32px);
 
   a {
@@ -7,6 +8,21 @@
   }
 }
 
+.main-nav__toggle {
+  margin-left: 70px;
+}
+
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  .reset-list();
+}
+
+.site-list__item {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid @black;
+  border-top: 1px solid @gray-blue;
+  background-color: @dark-gray;
 }
