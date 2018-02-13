@@ -1,0 +1,136 @@
+.review-form {
+  padding-top: 30px;
+  padding-bottom: 44px;
+  text-align: center;
+}
+
+.review-form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.review-form__title {
+  margin-bottom: 0;
+  display: inline;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.review-form__textarea {
+  margin-top: 20px;
+  resize: none;
+  padding: 15px 20px;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: @dark-gray;
+  width: 240px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  transition: 0.1s linear border;
+  
+  &:hover {
+    border: 2px solid @dark-gray;
+  }
+  
+  &:active {
+    border: 2px solid @pink;
+  }
+}
+
+@media @tablet-widths {
+  
+  .review-form {
+    order: 2;
+    margin-bottom: 23px;
+  }
+  
+  .review-form__wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 60px 40px 60px;
+    border: 2px solid #e5e5e5;
+  }
+  
+  .review-form__title {
+    position: relative;
+    width: 350px;
+    top: -30px;
+    background-color: @white;
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .review-form__textarea {
+    margin-top: 10px;
+    resize: none;
+    padding: 15px 20px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: @dark-gray;
+    width: 456px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    transition: 0.1s linear border;
+    
+    &:hover {
+      border: 2px solid @dark-gray;
+    }
+    
+    &:active {
+      border: 2px solid @pink;
+    }
+  }
+}
+
+@media @desktop-widths {
+  
+  .review-form {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  
+  .review-form__wrapper {
+    width: 820px;
+    margin: 0 auto;
+    padding: 10px 60px 40px 60px;
+  }
+  
+  .review-form__title {
+    top: -20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 0;
+  }
+  
+  .review-form__textarea {
+    margin-top: 20px;
+    height: 90px;
+    resize: none;
+    padding: 15px 20px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: @dark-gray;
+    width: 780px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    transition: 0.1s linear border;
+    
+    &:hover {
+      border: 2px solid @dark-gray;
+    }
+    
+    &:focus {
+      border: 2px solid @pink;
+    }
+  }
+}

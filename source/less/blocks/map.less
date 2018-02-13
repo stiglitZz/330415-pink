@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+}
+
+.map__content {
+  width: 100%;
+  height: 200px;
+}
+
+.map__bg {
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  z-index: 1;
+  top: -1px;
+}
+
+.place-card {
+  display: none;
+}
+
+@media @tablet-widths {
+  .map__content {
+    height: 368px;
+  }
+}
+
+@media @desktop-widths {
+  .map__content {
+    height: 515px;
+  }
+}

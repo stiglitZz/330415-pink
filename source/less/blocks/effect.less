@@ -1,0 +1,148 @@
+.effect {
+  display: none;
+}
+
+@media @tablet-widths {
+  .effect {
+    display: block;
+    position: relative;
+    padding-top: 59px;
+    padding-bottom: 40px;
+  }
+  
+  .effect__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .effect__clock {
+    position: relative;
+    width: 242px;
+    margin-right: 46px;
+  }
+  
+  .effect__svg {
+    width: 242px;
+    height: 280px;
+  }
+  
+  .effect__clock-text {
+    padding: 28px 32px 36px 32px;
+    position: absolute;
+    top: 57px;
+    left: 20px;
+    font-weight: 700;
+    font-size: 96px;
+    color: @pink;
+    border: 14px solid @pink;
+    border-radius: 50%;
+  }
+  
+  .effect__about {
+    width: 350px;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  
+  .effect__title {
+    width: 169px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    color: @black;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  .effect__title-line-break {
+    display: block;
+  }
+  
+  .effect__text {
+    width: 296px;
+    color: @dark-gray;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .effect__more {
+    color: @pink;
+    font-size: 14px;
+  }
+}
+
+@media @desktop-widths {
+  .effect {
+    background-color: @light-gray;
+    padding: 0 0 58px 40px;
+  }
+  
+  .effect__wrapper {
+    justify-content: flex-start;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .effect__clock {
+    width: 302px;
+    margin-right: 65px;
+  }
+  
+  .effect__svg {
+    margin-top: 26px;
+    width: 302px;
+    height: 350px;
+    
+    path {
+      height: 400px;
+    }
+  }
+  
+  .effect__clock-text {
+    padding: 35px 40px 50px 45px;
+    font-size: 120px;
+    top: 100px;
+    left: 25px;
+  }
+  
+  .effect__about {
+    width: 522px;
+    margin-left: 0;
+    margin-top: 120px;
+    padding-left: 0;
+  }
+  
+  .effect__title {
+    width: auto;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .effect__text {
+    width: 526px;
+    margin-top: 19px;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: @dark-gray;
+  }
+  
+  .effect__title-line-break {
+    display: inline;
+  }
+  
+  .effect__text-line-break {
+    display: block;
+  }
+  
+  .effect__more {
+    color: @pink;
+    font-size: 18px;
+  }
+}
