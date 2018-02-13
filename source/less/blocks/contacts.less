@@ -1,0 +1,129 @@
+.contacts {
+  background-color: @white;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__item {
+  margin-bottom: 0;
+}
+
+.contacts__item-title {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: @dark-gray;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__item-link {
+  display: block;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: 300;
+  color: @pink;
+  font-size: 24px;
+  transition: 0.1s linear color, 0.1s linear text-decoration;
+
+  &:hover {
+    color: @dirt-gray;
+    text-decoration: underline;
+  }
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
+}
+
+.contacts__title {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  color: @dark-gray;
+}
+
+@media @tablet-widths {
+  .contacts {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+    color: @dirt-gray;
+    margin-bottom: 30px;
+  }
+
+  .contacts__items {
+    flex-direction: row;
+  }
+
+  .contacts__item {
+    width: 48%;
+    margin-bottom: 26px;
+
+    &:last-child {
+      margin-left: 25%;
+      margin-right: 25%;
+
+      .contacts__item-title {
+        margin-bottom: 11px;
+      }
+    }
+  }
+}
+
+@media @desktop-widths {
+
+  .contacts {
+    padding-top: 25px;
+  }
+  .contacts__title {
+    margin-bottom: 42px;
+    font-size: 50px;
+    color: @dark-gray;
+  }
+
+  .contacts__item {
+    width: 33%;
+
+    &:last-child {
+      margin: 0;
+
+      .contacts__item-title {
+        margin-bottom: 26px;
+      }
+
+      .contacts__item-link {
+        width: 250px;
+        margin: 0 auto;
+      }
+    }
+
+    &--email {
+      order: 2;
+    }
+
+    &--address {
+      order: 1;
+    }
+  }
+
+  .contacts__item-title {
+    margin-bottom: 25px;
+  }
+}
