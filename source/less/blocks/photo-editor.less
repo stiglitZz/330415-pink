@@ -45,15 +45,12 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  
   &--crop .photo-editor__svg {
     fill: @pink;
   }
-  
   &:hover .photo-editor__svg {
     fill: @dark-gray;
   }
-  
   &:active .photo-editor__svg {
     fill: @pink;
   }
@@ -88,7 +85,6 @@
   height: 10px;
   border-radius: 50%;
   border: 2px solid @pink;
-  
   &--crop {
     top: -6px;
     left: 190px;
@@ -119,12 +115,10 @@
   border-radius: 50px 50px;
   background: none;
   transition: 0.1s linear color, 0.1s linear background-color;
-  
   &:hover {
     color: @white;
     background-color: @pink;
   }
-  
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: @pink;
@@ -146,12 +140,10 @@
   border-radius: 50px 50px;
   background: none;
   transition: 0.1s linear color, 0.1s linear background-color, 0.1s linear border;
-  
   &:hover {
     color: rgba(40, 54, 69, 0.3);
     border: 3px solid rgba(40, 54, 69, 0.3);
   }
-  
   &:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid rgba(40, 54, 69, 0.1);
@@ -165,21 +157,17 @@
     padding-bottom: 48px;
     background-color: @light-gray;
   }
-  
   .photo-editor__wrapper {
     width: 620px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  
   .photo-editor__img {
     margin-right: 15px;
   }
-  
   .photo-editor__filters {
     justify-content: flex-start;
   }
-  
   .photo-editor__edit-btns {
     display: block;
     min-width: 22px;
@@ -187,14 +175,12 @@
     margin-top: 0;
     margin-right: 0;
   }
-  
   .photo-editor__edit-btn {
     display: block;
     margin-right: 0;
     width: 30px;
     padding-top: 6px;
     padding-bottom: 40px;
-    
     &::after {
       content: '';
       display: block;
@@ -204,52 +190,42 @@
       height: 1px;
       background-color: #dddfe0;
     }
-    
     &--contrast {
       margin-left: 5px;
-      
       &::after {
         top: 23px;
       }
     }
   }
-  
   .photo-editor__edit-icon {
     height: 22px;
-    
     &--contrast {
       height: 16px;
     }
   }
-  
   .photo-editor__sliders {
     margin-left: 30px;
     margin-bottom: 35px;
     padding-top: 10px;
     width: 202px;
   }
-  
   .photo-editor__slider {
     display: block;
     position: relative;
     margin-top: 0;
     margin-bottom: 68px;
-    
     &--crop {
       margin-top: 7px;
       margin-bottom: 70px;
     }
-    
     &--color,
     &--contrast {
       visibility: visible;
     }
   }
-  
   .photo-editor__slider-scale {
     width: 200px;
   }
-  
   .photo-editor__slider-toggle {
     position: absolute;
     top: -6px;
@@ -258,26 +234,21 @@
     height: 10px;
     border-radius: 50%;
     border: 2px solid @pink;
-    
     &--crop {
       left: 140px;
     }
-    
     &--color {
       left: 25px;
     }
-    
     &--contrast {
       left: 90px;
     }
   }
-  
   .photo-editor__post-btns {
     padding-top: 0;
     margin-left: 20px;
     border: none;
   }
-  
   .photo-editor__submit-btn {
     cursor: pointer;
     display: block;
@@ -291,7 +262,6 @@
     border-radius: 50px 50px;
     background: none;
     transition: 0.1s linear color, 0.1s linear background-color;
-    
     &:hover {
       color: @white;
       background-color: @pink;
@@ -301,7 +271,6 @@
       background-color: @pink;
     }
   }
-  
   .photo-editor__reset-btn {
     cursor: pointer;
     display: block;
@@ -316,12 +285,10 @@
     border-radius: 50px 50px;
     background: none;
     transition: 0.1s linear color, 0.1s linear background-color, 0.1s linear border;
-    
     &:hover {
       color: rgba(40, 54, 69, 0.3);
       border: 3px solid rgba(40, 54, 69, 0.3);
     }
-    
     &:active {
       color: rgba(255, 255, 255, 0.3);
       border: 3px solid rgba(40, 54, 69, 0.1);
@@ -336,39 +303,32 @@
     padding-bottom: 28px;
     background-color: @white;
   }
-  
   .photo-editor__inner {
     width: 410px;
   }
-  
   .photo-editor__filters {
     width: 410px;
   }
-  
   .photo-editor__wrapper {
     width: 815px;
     margin: 0 auto;
     padding: 60px 60px 55px 65px;
     background-color: @light-gray;
   }
-  
   .photo-editor__img {
     width: 300px;
     margin-left: 11px;
     margin-right: 70px;
   }
-  
   .photo-editor__edit-btns {
     width: 42px;
     margin-right: 22px;
   }
-  
   .photo-editor__edit-btn {
     display: block;
     padding-top: 0;
     padding-bottom: 10px;
     margin-bottom: 14px;
-    
     &::after {
       content: '';
       display: block;
@@ -378,11 +338,9 @@
       height: 1px;
       background-color: #dddfe0;
     }
-    
     &--color {
       margin-bottom: 20px;
     }
-    
     &--contrast::after {
       top: 15px;
     }
@@ -390,21 +348,17 @@
       fill: @pink;
     }
   }
-  
   .photo-editor__edit-icon {
     height: 42px;
-    
     &--contrast {
       height: 32px;
     }
   }
-  
   .photo-editor__sliders {
     margin-bottom: 11px;
     padding-top: 20px;
     width: 290px;
   }
-  
   .photo-editor__slider {
     display: block;
     position: relative;
@@ -419,11 +373,9 @@
       visibility: visible;
     }
   }
-  
   .photo-editor__slider-scale {
     width: 290px;
   }
-  
   .photo-editor__slider-toggle {
     position: absolute;
     top: -6px;
@@ -432,26 +384,21 @@
     height: 10px;
     border-radius: 50%;
     border: 2px solid @pink;
-    
     &--crop {
       left: 70px;
     }
-    
     &--color {
       left: 248px;
     }
-    
     &--contrast {
       left: 160px;
     }
   }
-  
   .photo-editor__post-btns {
     margin-top: 90px;
     margin-left: 0;
     width: 450px;
   }
-  
   .photo-editor__submit-btn {
     width: 180px;
     cursor: pointer;
@@ -467,18 +414,15 @@
     border-radius: 50px 50px;
     background: none;
     transition: 0.1s linear color, 0.1s linear background-color;
-    
     &:hover {
       color: @white;
       background-color: @pink;
     }
-    
     &:active {
       color: rgba(255, 255, 255, 0.3);
       background-color: @pink;
     }
   }
-  
   .photo-editor__reset-btn {
     width: 180px;
     cursor: pointer;
@@ -494,12 +438,10 @@
     border-radius: 50px 50px;
     background: none;
     transition: 0.1s linear color, 0.1s linear background-color, 0.1s linear border;
-    
     &:hover {
       color: rgba(40, 54, 69, 0.3);
       border: 3px solid rgba(40, 54, 69, 0.3);
     }
-    
     &:active {
       color: rgba(255, 255, 255, 0.3);
       border: 3px solid rgba(40, 54, 69, 0.1);

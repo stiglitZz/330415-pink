@@ -22,7 +22,6 @@
   text-align: center;
   font-size: 14px;
   color: @dark-gray;
-  
   &--hidden {
     display: none;
   }
@@ -43,11 +42,9 @@
   color: @white;
   cursor: pointer;
   transition: 0.1s linear color, 0.1s linear background-color;
-  
   &:hover {
     background-color: @light-green;
   }
-  
   &:active {
     background-color: @light-green;
     color: rgba(255, 255, 255, 0.3);
@@ -59,34 +56,28 @@
   font-size: 14px;
   text-transform: uppercase;
   color: @dark-gray;
-  
   &--pink {
     color: @pink;
   }
-  
   &--hidden {
     display: none;
   }
 }
 
 @media @tablet-widths {
-  
   .form {
     padding-top: 10px;
     padding-bottom: 50px;
   }
-  
   .form__wrapper {
     width: 620px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  
   .form__about {
     width: auto;
     order: -3;
   }
-  
   .form__about-text {
     width: 550px;
     padding-top: 50px;
@@ -97,28 +88,23 @@
     text-align: center;
     font-size: 18px;
     color: @dark-gray;
-    
     &--hidden {
       display: inline;
       padding-top: 0;
       margin-top: 0;
     }
   }
-  
   .form__btns {
     order: 3;
   }
-  
   .form__btn {
     width: 300px;
     float: left;
     margin-bottom: 0;
   }
-  
   .form__required {
     float: right;
     margin-top: 25px;
-    
     &--pink {
       float: none;
     }
@@ -126,12 +112,10 @@
 }
 
 @media @desktop-widths {
-  
   .form {
     padding-top: 8px;
     padding-bottom: 0;
   }
-  
   .form__wrapper {
     flex-direction: row;
     justify-content: space-around;
@@ -139,29 +123,23 @@
     margin: 0 auto;
     padding: 0 10px;
   }
-  
   .form__about {
     width: 800px;
     margin: 0 auto;
     margin-bottom: 17px;
   }
-  
   .form__about-text {
     width: 760px;
-    
     &--hidden {
       display: inline;
     }
   }
-  
   .form__btns {
     width: 940px;
   }
-  
   .form__btn {
     padding: 22px 60px;
   }
-  
   .form__required--hidden {
     display: inline;
     margin-top: 0;
