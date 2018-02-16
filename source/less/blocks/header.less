@@ -3,25 +3,31 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 710px auto;
+
   &--bg-top {
     background-position: top center;
   }
+
   &--bg-center {
     background-position: center center;
   }
+
   &--photo {
     background-position: bottom center;
     padding-bottom: 67px;
+
     .header__title-wrapper {
       padding-top: 15px;
       width: 250px;
       margin: 0 auto;
     }
   }
+
   &--form {
     background-position: bottom center;
     min-height: 100px;
     padding-bottom: 37px;
+
     .header__title-wrapper {
       padding-top: 15px;
       width: 250px;
@@ -29,10 +35,12 @@
       line-height: 1.2;
     }
   }
+
   @media @retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 710px auto;
   }
+
   @media @tablet-retina {
     background-image: none;
   }
@@ -61,10 +69,12 @@
 
 .header__logo-link {
   margin-left: 20px;
+
   &:hover .header__logo-symbol,
   &:hover .just-glasses {
     fill: @pink;
   }
+
   &:active .header__logo-symbol,
   &:active .just-glasses {
     fill: rgba(255, 255, 255, 0.3)
@@ -74,6 +84,7 @@
 .header__logo-img {
   margin: 5px 0 20px -72px;
   width: 150px;
+
   .just-glasses,
   .stars-glasses,
   .stars,
@@ -90,11 +101,13 @@
       background-attachment: scroll;
       background-position: center bottom;
       background-size: 1200px auto;
+
       @media @tablet-retina {
         background-image: url("../img/bg-back-tablet@2x.jpg");
         background-size: 1200px auto;
       }
     }
+
     &--photo {
       min-height: 200px;
       padding-bottom: 110px;
@@ -103,16 +116,19 @@
       background-attachment: scroll;
       background-position: center center;
       background-size: 1200px auto;
+
       .header__title-wrapper {
         padding-top: 38px;
         width: 350px;
         margin: 0 auto;
       }
+
       @media @tablet-retina {
         background-image: url("../img/bg-back-tablet@2x.jpg");
         background-size: 1200px auto;
       }
     }
+
     &--form {
       min-height: 100px;
       padding-bottom: 46px;
@@ -121,10 +137,12 @@
       background-attachment: scroll;
       background-position: center center;
       background-size: 1200px auto;
+
       @media @tablet-retina {
         background-image: url("../img/bg-back-tablet@2x.jpg");
         background-size: 1200px auto;
       }
+
       .header__title-wrapper {
         width: 620px;
         margin: 0 auto;
@@ -132,6 +150,7 @@
       }
     }
   }
+
   .header__title {
     text-align: center;
     font-family: "Open Sans", "Tahoma", sans-serif;
@@ -139,17 +158,21 @@
     font-weight: 300;
     color: @white;
   }
+
   .header__top {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
   }
+
   .header__logo-link {
     width: 320px;
   }
+
   .header__logo-img {
     width: 150px;
     height: 40px;
     margin: 27px 0 0 0;
+
     .just-glasses {
       display: block;
       fill: @white;
@@ -165,11 +188,13 @@
       background-attachment: scroll;
       background-position: center center;
       background-size: cover;
+
       @media @desktop-retina {
         background-image: url("../img/bg-back-desktop@2x.jpg");
         background-size: cover;
       }
     }
+
     &--photo {
       min-height: 200px;
       padding-bottom: 68px;
@@ -178,10 +203,12 @@
       background-attachment: 1200px auto;
       background-position: center center;
       background-size: cover;
+
       @media @desktop-retina {
         background-image: url("../img/bg-back-desktop@2x.jpg");
         background-size: 2560px auto;
       }
+
       .header__title-wrapper {
         width: 340px;
         margin: 0 auto;
@@ -189,6 +216,7 @@
         line-height: 1.2;
       }
     }
+
     &--form {
       min-height: 200px;
       padding-bottom: 59px;
@@ -197,10 +225,12 @@
       background-attachment: scroll;
       background-position: center center;
       background-size: cover;
+
       @media @desktop-retina {
         background-image: url("../img/bg-back-desktop@2x.jpg");
         background-size: 2560px auto;
       }
+
       .header__title-wrapper {
         width: 750px;
         margin: 0 auto;
@@ -208,11 +238,13 @@
       }
     }
   }
+
   .header__wrapper {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
   }
+
   .header__title {
     order: 2;
     text-align: center;
@@ -221,27 +253,34 @@
     font-weight: 300;
     color: @white;
   }
+
   .header__top {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
   .header__logo-link {
     margin-left: 0;
     margin-bottom: 20px;
+
     &:hover .one-star {
       fill: @pink;
     }
+
     &:active .one-star {
       fill: rgba(255, 255, 255, 0.3)
     }
   }
+
   .header__logo-img {
     width: 150px;
     height: 40px;
     margin-top: 10px;
     margin-left: 0;
+
     .just-glasses {
       display: none;
     }
+
     .stars-glasses, .stars, .one-star {
       display: block;
     }
